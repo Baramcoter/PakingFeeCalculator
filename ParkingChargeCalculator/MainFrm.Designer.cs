@@ -40,6 +40,9 @@
             this.tbx_CarOutTime = new System.Windows.Forms.TextBox();
             this.btn_CarIn_Now = new System.Windows.Forms.Button();
             this.btn_CarOut_Now = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_Charge = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +114,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("나눔스퀘어_ac", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(9, 194);
+            this.label2.Location = new System.Drawing.Point(9, 170);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 5;
@@ -121,7 +124,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("나눔스퀘어_ac", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label3.Location = new System.Drawing.Point(9, 229);
+            this.label3.Location = new System.Drawing.Point(9, 205);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 6;
@@ -129,7 +132,7 @@
             // 
             // tbx_CarInTime
             // 
-            this.tbx_CarInTime.Location = new System.Drawing.Point(66, 191);
+            this.tbx_CarInTime.Location = new System.Drawing.Point(66, 167);
             this.tbx_CarInTime.Name = "tbx_CarInTime";
             this.tbx_CarInTime.Size = new System.Drawing.Size(158, 21);
             this.tbx_CarInTime.TabIndex = 7;
@@ -137,7 +140,7 @@
             // 
             // tbx_CarOutTime
             // 
-            this.tbx_CarOutTime.Location = new System.Drawing.Point(66, 225);
+            this.tbx_CarOutTime.Location = new System.Drawing.Point(66, 201);
             this.tbx_CarOutTime.Name = "tbx_CarOutTime";
             this.tbx_CarOutTime.Size = new System.Drawing.Size(158, 21);
             this.tbx_CarOutTime.TabIndex = 8;
@@ -149,7 +152,7 @@
             this.btn_CarIn_Now.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CarIn_Now.Font = new System.Drawing.Font("나눔스퀘어_ac Bold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_CarIn_Now.ForeColor = System.Drawing.Color.White;
-            this.btn_CarIn_Now.Location = new System.Drawing.Point(241, 189);
+            this.btn_CarIn_Now.Location = new System.Drawing.Point(241, 165);
             this.btn_CarIn_Now.Name = "btn_CarIn_Now";
             this.btn_CarIn_Now.Size = new System.Drawing.Size(98, 25);
             this.btn_CarIn_Now.TabIndex = 9;
@@ -163,7 +166,7 @@
             this.btn_CarOut_Now.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CarOut_Now.Font = new System.Drawing.Font("나눔스퀘어_ac Bold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.btn_CarOut_Now.ForeColor = System.Drawing.Color.White;
-            this.btn_CarOut_Now.Location = new System.Drawing.Point(241, 223);
+            this.btn_CarOut_Now.Location = new System.Drawing.Point(241, 199);
             this.btn_CarOut_Now.Name = "btn_CarOut_Now";
             this.btn_CarOut_Now.Size = new System.Drawing.Size(98, 25);
             this.btn_CarOut_Now.TabIndex = 10;
@@ -171,12 +174,45 @@
             this.btn_CarOut_Now.UseVisualStyleBackColor = false;
             this.btn_CarOut_Now.Click += new System.EventHandler(this.btn_CarOut_Now_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("나눔스퀘어_ac", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label4.Location = new System.Drawing.Point(93, 246);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "주차요금 : ";
+            // 
+            // lbl_Charge
+            // 
+            this.lbl_Charge.AutoSize = true;
+            this.lbl_Charge.Font = new System.Drawing.Font("나눔스퀘어_ac", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lbl_Charge.Location = new System.Drawing.Point(169, 246);
+            this.lbl_Charge.Name = "lbl_Charge";
+            this.lbl_Charge.Size = new System.Drawing.Size(17, 13);
+            this.lbl_Charge.TabIndex = 12;
+            this.lbl_Charge.Text = "0 ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("나눔스퀘어_ac", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label5.Location = new System.Drawing.Point(207, 247);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "원 입니다.";
+            // 
             // MainFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(345, 332);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lbl_Charge);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_CarOut_Now);
             this.Controls.Add(this.btn_CarIn_Now);
             this.Controls.Add(this.tbx_CarOutTime);
@@ -213,6 +249,9 @@
         private System.Windows.Forms.TextBox tbx_CarOutTime;
         private System.Windows.Forms.Button btn_CarIn_Now;
         private System.Windows.Forms.Button btn_CarOut_Now;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_Charge;
+        private System.Windows.Forms.Label label5;
     }
 }
 

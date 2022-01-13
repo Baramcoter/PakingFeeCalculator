@@ -12,6 +12,8 @@ namespace ParkingChargeCalculator
 {
     public partial class FeeSetFrm : Form
     {
+        MainFrm main = new MainFrm();
+
         public FeeSetFrm()
         {
             InitializeComponent();
@@ -31,6 +33,7 @@ namespace ParkingChargeCalculator
             tbx_AddUnitCharge.Enabled = false;
 
             btn_Modify.Enabled = true;
+            main.Refresh();
         }
 
         private void FeeSetFrm_Load(object sender, EventArgs e)

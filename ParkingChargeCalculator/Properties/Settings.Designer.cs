@@ -70,5 +70,17 @@ namespace ParkingChargeCalculator.Properties {
                 this["addUnitCharge"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int freeUsingTime {
+            get {
+                return ((int)(this["freeUsingTime"]));
+            }
+            set {
+                this["freeUsingTime"] = value;
+            }
+        }
     }
 }
